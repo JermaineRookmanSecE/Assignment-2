@@ -1,0 +1,154 @@
+body {
+    background-color: #e0e0e001;;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    background-color: #f0f0f0c8;
+    padding: 10px 20px;
+    border-radius: 7px;
+    margin: 0;
+    font-size: 24px;
+}
+
+nav {
+    margin-left: auto;
+    background-color: #f0f0f0c8;
+    padding: 10px 20px;
+    border-radius: 7px;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    filter: saturate(100%) brightness(85%);
+    background-color: rgba(109, 240, 254, 0.5);
+}
+
+.logo {
+    margin-left: 20px;
+    animation: slideInRight 1s ease-in-out;
+}
+
+.card {
+    background-color: #f0f0f0c8;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px auto;
+    padding: 15px;
+}
+
+.card-title {
+    padding: 15px;
+    margin: 0;
+}
+
+.card-images {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.card img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+}
+
+img:hover {
+    filter: saturate(100%) brightness(85%);
+    background-color: rgba(109, 240, 254, 0.5);
+}
+
+.video-card {
+    max-width: 600px;
+    border: 1px solid #f0f0f098;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+.video-card h2 {
+    padding: 20px;
+    text-align: center;
+    background-color: #f0f0f098;
+    margin: 0;
+    font-size: 24px;
+}
+
+.video-container {
+    padding: 20px;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 400px;
+}
+
+footer {
+    padding: 15px;
+    text-align: center;
+    background-color: #f0f0f098;
+    border-top: 1px solid #f0f0f098;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px;
+}
+
+@keyframes slideIn {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes slideInUp {
+    0% { transform: translateY(100%); }
+    100% { transform: translateY(0); }
+}
+
+/* Phones */
+@media screen and (max-width: 480px) {
+    .card {
+        width: 65%;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 17px;
+    }
+    p {
+        font-size: 14px;
+    }
+}
+
+/* iPads/Tablets */
+@media screen and (max-width: 768px) {
+    .card {
+        width: 75%;
+    }
+    .card-images {
+        flex-direction: column;
+        align-items: center;
+    }
+}

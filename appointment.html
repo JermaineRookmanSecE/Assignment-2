@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflections Barbershop</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Choose Your Barber/Hairstylist!</h1>
+        <nav>
+            <a href="home.html">Home</a> |
+            <a href="appointment.html">Book an Appointment</a> |
+            <a href="whyUs.html">Why Choose Us?</a> |
+            <a href="contactUs.html">Contact Us</a>
+        </nav>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnsFZblVHnxOg1_TMh-DInIQuUZuzZUgrDWg&s" alt="logo" class="logo">
+    </div>
+
+<h1 style="align-items: center;">Meet the Reflections Team!</h1>
+<div class="team-container">
+        <div class="card">
+            <div class="card-images">
+                <div class="team-member">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCTv1i4ffqIr8z6GxCYaQOf259gDCHrq6jsQ&s" style="animation: slideInUp 1s ease-in-out;" alt="Angela">
+                    <h3>Angela</h3>
+                    <p>Days Available: Monday-Friday</p>
+                    <p>Time: 10am-5pm</p>
+                </div>
+            </div>
+        </div>
+    
+       <div class="card">
+           <div class="card-images">
+              <div class="team-member">
+                 <img src="https://s3-media0.fl.yelpcdn.com/bphoto/Hf5OTFZw5Vzr2GYRXEIy0Q/1000s.jpg" style="animation: slideInUp 1s ease-in-out;" alt="Jeffrey">
+                <h3>Jeffrey</h3>
+                <p>Days Available: Monday-Friday</p>
+                <p>Time: 12am-7pm</p>
+            </div>
+        </div>
+    </div>
+   
+    <div class="card">
+        <div class="card-images">
+            <div class="team-member">
+                <img src="https://www.blacklax.org/wp-content/uploads/2022/03/srvfy0f2d8.jpg" style="animation: slideInUp 1s ease-in-out;" alt="Stephen">
+                <h3>Stephen</h3>
+                <p>Days Available: Weekends</p>
+                <p>Time: 10am-7pm</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h3>Which Barber are you selecting?</h3>
+<select name = "barber" id="barber-select">
+    <option value="">--Select your barber for the appointment--</option>
+    <option value="Angela">Angela</option>
+    <option value="Jeffrey">Jeffrey</option>
+    <option value="Stephen">Stephen</option>
+</select>
+
+<h3>What day of the week?</h3>
+<select name = "barber" id="barber-select">
+    <option value="">--Select day of the week you expect to show up--</option>
+    <option value="Sunday">Sunday</option>
+    <option value="Monday">Monday</option>
+    <option value="Tuesday">Tuesday</option>
+    <option value="Wednesday">Wednesday</option>
+    <option value="Thursday">Thursday</option>
+    <option value="Friday">Friday</option>
+    <option value="Saturday">Saturday</option>
+</select>
+
+<h3>What time would you like to show up at?</h3>
+<select name = "time" id="time-select">
+    <option value="">--Select hour of the day you expect to show up--</option>
+    <option value="10am">10am</option>
+    <option value="11am">11am</option>
+    <option value="12pm">12pm</option>
+    <option value="1pm">1pm</option>
+    <option value="2pm">2pm</option>
+    <option value="3pm">3pm</option>
+    <option value="4pm">4pm</option>
+    <option value="5pm">5pm</option>
+    <option value="6pm">6pm</option>
+    <option value="7pm">7pm</option>
+</select>
+
+<h3>Submission</h3>
+<button type ="submit" onclick="alert('Request Submitted Succesfully, you will get an email comfirming if the day you requested is possible!')"
+>Click when complete</button>
+
+<footer>
+    <p>Visit us and Evolve Today!</p>
+    <p>&copy; 2024 Reflections Barbershop. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
